@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #fff;
+  --gray-200: #E4E7EC;
+  --carousel-content-bg: #0000004D;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    font-weight: 400;
+   }
 }
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .flex-gap {
+    display: flex;
+    gap: 10px;
+  }
+
+  .carousel-custom-bg {
+    background-color: var(--carousel-content-bg);
+  }
+  
+  .height-30vh {
+    height: 60vh;
+  }
+}
+
+@layer components {
+  .footer {
+    @apply text-sm p-4 bg-gray-800 block;
+  }  
+
+  .main {
+    @apply flex-grow flex flex-col overflow-y-auto max-h-screen;
+  }
+
+  .main h1 {
+    @apply text-3xl font-semibold mb-4;
+  }
+}
+
+.carousel-item {
+  @apply  height-30vh relative;
+}
+.carousel-content {
+  @apply w-full p-4 carousel-custom-bg bg-opacity-75 text-white absolute bottom-0 ;
+}
+

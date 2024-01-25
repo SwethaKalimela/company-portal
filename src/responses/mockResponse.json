@@ -1,0 +1,31 @@
+[
+    {
+      "review": "Kobodrop has helped me send and receive money with little to no complications. It’s what everyone needs!!.",
+      "name": "Kemi Ogunnaike",
+      "location": "Nigeria",
+      "stars": "5",
+      "image": "person-1.jpg"
+    },
+    {
+      "review": "Absolutely impressed with Kobodrop's seamless money transfer experience. It's a game-changer!",
+      "name": "James Thompson",
+      "location": "United States",
+      "stars": "4",
+      "image": "person-2.jpg"
+    },
+    {
+      "review": "Kobodrop is my go-to platform for hassle-free financial transactions. Highly recommended!",
+      "name": "Sophie Chen",
+      "location": "Canada",
+      "stars": "5",
+      "image": "person-3.jpg"
+    },
+    {
+      "review": "I can't thank Kobodrop enough for making money transfers so easy. It's reliable and efficient!",
+      "name": "Carlos Rodriguez",
+      "location": "Spain",
+      "stars": "5",
+      "image": "person-4.jpg"
+    }
+  ]
+  
